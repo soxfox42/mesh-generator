@@ -1,4 +1,4 @@
-project('itp_custom', 'c', default_options : 'default_library=static')
+project('mesh_generator', 'c', default_options : 'default_library=static')
 
 gl_dep = dependency('gl')
 glfw_dep = dependency('glfw3', required : false)
@@ -17,7 +17,7 @@ inc = include_directories('include')
 subdir('src')
 
 executable(
-    'itp_custom',
+    'mesh_generator',
     sources,
     dependencies : [
         gl_dep,
